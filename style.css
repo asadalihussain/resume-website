@@ -9,8 +9,8 @@
   --gray-400:#9a9a9a;
   --gray-600:#555555;
   --gray-800:#222222;
-  --accent:  #2563eb;
-  --accent-light: #dbeafe;
+  --accent:  #0d9488;
+  --accent-light: #ccfbf1;
   --gold:    #d97706;
   --radius:  12px;
   --font-sans: 'Inter', system-ui, sans-serif;
@@ -76,7 +76,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 60%, #1d4ed8 100%);
+  background: linear-gradient(135deg, #0f2a2a 0%, #134e4a 60%, #0d9488 100%);
   color: var(--white);
   text-align: center;
   position: relative;
@@ -90,7 +90,7 @@ body {
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #93c5fd;
+  color: #99f6e4;
   margin-bottom: 16px;
 }
 
@@ -99,7 +99,7 @@ body {
   font-size: clamp(52px, 8vw, 96px);
   line-height: 1.05;
   margin-bottom: 12px;
-  background: linear-gradient(135deg, #fff 0%, #bfdbfe 100%);
+  background: linear-gradient(135deg, #fff 0%, #99f6e4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -108,7 +108,7 @@ body {
 .hero-title {
   font-size: clamp(18px, 2.5vw, 24px);
   font-weight: 300;
-  color: #bfdbfe;
+  color: #99f6e4;
   margin-bottom: 16px;
 }
 
@@ -117,7 +117,7 @@ body {
   align-items: center;
   gap: 6px;
   font-size: 14px;
-  color: #93c5fd;
+  color: #99f6e4;
   margin-bottom: 40px;
 }
 
@@ -178,7 +178,7 @@ body {
 /* ─── Sections ─────────────────────────────────────────────── */
 .section { padding: 100px 24px; }
 .section-dark { background: var(--gray-50); }
-.section-accent { background: linear-gradient(135deg, #eff6ff, #dbeafe); }
+.section-accent { background: linear-gradient(135deg, #f0fdfa, #ccfbf1); }
 
 .container {
   max-width: 1100px;
@@ -288,7 +288,7 @@ body {
 }
 
 .timeline-content:hover {
-  box-shadow: 0 8px 24px rgba(37,99,235,0.1);
+  box-shadow: 0 8px 24px rgba(13,148,136,0.1);
   transform: translateY(-2px);
 }
 
@@ -369,7 +369,7 @@ body {
 }
 
 .skill-card:hover {
-  box-shadow: 0 8px 24px rgba(37,99,235,0.1);
+  box-shadow: 0 8px 24px rgba(13,148,136,0.1);
   transform: translateY(-4px);
 }
 
@@ -399,7 +399,7 @@ body {
   padding: 32px;
   background: var(--white);
   border-radius: var(--radius);
-  box-shadow: 0 2px 12px rgba(37,99,235,0.08);
+  box-shadow: 0 2px 12px rgba(13,148,136,0.08);
 }
 
 .volunteer-header {
@@ -500,13 +500,13 @@ body {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.2s;
-  box-shadow: 0 4px 14px rgba(37,99,235,0.3);
+  box-shadow: 0 4px 14px rgba(13,148,136,0.3);
 }
 
 .contact-btn:hover {
-  background: #1d4ed8;
+  background: #0f766e;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37,99,235,0.4);
+  box-shadow: 0 6px 20px rgba(13,148,136,0.4);
 }
 
 /* ─── Footer ───────────────────────────────────────────────── */
