@@ -773,7 +773,7 @@ body {
   transform: translateX(-50%);
   width: 700px;
   height: 400px;
-  background: rgba(222, 107, 72, 0.18);
+  background: rgba(184, 150, 62, 0.18);
   filter: blur(100px);
   border-radius: 50%;
   pointer-events: none;
