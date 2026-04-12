@@ -88,6 +88,7 @@ body {
 }
 
 .section-headline-light { color: var(--surface); }
+.headline-gold { color: var(--terracotta); font-style: normal; }
 .section-headline-center { text-align: center; }
 
 .section-eyebrow {
