@@ -793,6 +793,105 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* ─── Recommendations ───────────────────────────────────────── */
+.rec-slider { margin-top: 48px; }
+
+.rec-track-wrapper { overflow: hidden; }
+
+.rec-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rec-card {
+  min-width: 100%;
+  padding: 48px 56px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-sizing: border-box;
+}
+
+.rec-quote {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--stone);
+  font-style: italic;
+}
+
+.rec-author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rec-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--surface);
+  letter-spacing: 0.02em;
+}
+
+.rec-title {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--terracotta);
+  letter-spacing: 0.03em;
+}
+
+.rec-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.rec-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: transparent;
+  color: var(--surface);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rec-arrow:hover {
+  border-color: var(--terracotta);
+  color: var(--terracotta);
+}
+
+.rec-dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.rec-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.rec-dot.active {
+  background: var(--terracotta);
+  width: 20px;
+  border-radius: 3px;
+}
+
 /* ─── Contact / Footer ──────────────────────────────────────── */
 .contact-section {
   text-align: center;
