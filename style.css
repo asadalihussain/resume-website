@@ -305,34 +305,56 @@ body {
 /* ─── Brands Marquee ───────────────────────────────────────── */
 .brands-section {
   background: var(--terracotta);
-  padding: 20px 0;
-  overflow: hidden;
+  padding: 48px 48px 56px;
   position: relative;
   z-index: 10;
 }
 
-.brands-track-wrapper { overflow: hidden; }
-
-.brands-track {
-  display: flex;
-  width: max-content;
-  animation: brandScroll 36s linear infinite;
+.brands-inner {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.brands-row {
+.brands-label {
   display: flex;
   align-items: center;
-  white-space: nowrap;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.brands-rule {
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: rgba(10,10,10,0.3);
+  flex-shrink: 0;
+}
+
+.brands-label > span:last-child {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(10,10,10,0.5);
+}
+
+.brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 0;
 }
 
 .brand-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 52px;
-  padding: 0 40px;
-  flex-shrink: 0;
+  height: 60px;
+  padding: 0 36px;
+  border-right: 1px solid rgba(10,10,10,0.12);
 }
+
+.brand-item:last-child { border-right: none; }
 
 .brand-item img {
   height: 28px;
@@ -340,17 +362,16 @@ body {
   max-width: 110px;
   object-fit: contain;
   display: block;
-  /* white logos on terracotta */
-  filter: brightness(0) invert(1) opacity(0.85);
+  filter: brightness(0) opacity(0.55);
   transition: opacity 0.25s;
 }
 
-.brand-item:hover img { opacity: 1; }
+.brand-item:hover img { filter: brightness(0) opacity(0.85); }
 
 .brand-item img[alt="Hella Rooted"],
 .brand-item img[alt="TRS Health"],
 .brand-item img[alt="Coupons.com"] {
-  height: 42px;
+  height: 40px;
   max-width: 140px;
 }
 
@@ -360,19 +381,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(10,10,10,0.6);
-}
-
-.brand-star {
-  font-style: normal;
-  font-size: 9px;
-  color: rgba(10,10,10,0.3);
-  flex-shrink: 0;
-}
-
-@keyframes brandScroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  color: rgba(10,10,10,0.5);
 }
 
 /* ─── About ─────────────────────────────────────────────────── */
