@@ -29,6 +29,36 @@
   next.addEventListener('click', () => goTo(current + 1));
 })();
 
+// Case studies slider
+(function () {
+  const track = document.querySelector('.case-track');
+  const dotsContainer = document.querySelector('.case-dots');
+  const cards = document.querySelectorAll('.case-card');
+  const prev = document.querySelector('.case-arrow-prev');
+  const next = document.querySelector('.case-arrow-next');
+  if (!track || !cards.length) return;
+
+  let current = 0;
+
+  cards.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.className = 'case-dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  function goTo(index) {
+    current = (index + cards.length) % cards.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    document.querySelectorAll('.case-dot').forEach((d, i) =>
+      d.classList.toggle('active', i === current)
+    );
+  }
+
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+})();
+
 // Fade-up on scroll
 const observer = new IntersectionObserver(
   (entries) => {
