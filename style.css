@@ -347,6 +347,13 @@ body {
 
 .brand-item:hover img { opacity: 1; }
 
+.brand-item img[alt="Hella Rooted"],
+.brand-item img[alt="TRS Health"],
+.brand-item img[alt="Coupons.com"] {
+  height: 42px;
+  max-width: 140px;
+}
+
 .brand-text {
   display: none;
   font-size: 13px;
