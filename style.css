@@ -426,37 +426,40 @@ body {
   color: rgba(26,26,26,0.45);
 }
 
-.awards-list { list-style: none; }
-
-.award-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 20px 0;
-  border-top: 1px solid rgba(26,26,26,0.1);
-  cursor: default;
-  transition: border-color 0.3s;
+.skills-group {
+  margin-bottom: 28px;
 }
 
-.award-item:last-child { border-bottom: 1px solid rgba(26,26,26,0.1); }
-.award-item:hover { border-top-color: var(--terracotta); }
-
-.award-title {
-  font-size: 18px;
+.skills-group-label {
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: -0.01em;
-  color: var(--charcoal);
-  margin-bottom: 4px;
-  transition: color 0.3s;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(26,26,26,0.35);
+  margin-bottom: 12px;
 }
 
-.award-item:hover .award-title { color: var(--terracotta); }
+.skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 
-.award-org {
+.skill-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 50px;
+  border: 1px solid rgba(26,26,26,0.12);
   font-size: 12px;
-  color: var(--stone);
-  font-weight: 400;
+  font-weight: 500;
+  color: var(--charcoal);
+  letter-spacing: 0.02em;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.skill-tag:hover {
+  border-color: var(--terracotta);
+  color: var(--terracotta);
 }
 
 .award-year {
