@@ -768,12 +768,29 @@ body {
   font-weight: 400;
 }
 
-.edu-desc {
-  font-size: 15px;
-  font-weight: 300;
-  color: rgba(26,26,26,0.6);
-  line-height: 1.7;
-  max-width: 38ch;
+.edu-right {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-end;
+}
+
+.edu-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.edu-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 50px;
+  border: 1px solid rgba(26,26,26,0.12);
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(26,26,26,0.55);
+  letter-spacing: 0.03em;
 }
 
 /* ─── Contact / Footer ──────────────────────────────────────── */
