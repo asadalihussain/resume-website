@@ -308,24 +308,44 @@ body {
 .brands-row {
   display: flex;
   align-items: center;
-  gap: 0;
   white-space: nowrap;
-  padding: 0 0;
 }
 
-.brands-row span {
-  font-size: 15px;
+.brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  padding: 0 40px;
+  flex-shrink: 0;
+}
+
+.brand-item img {
+  height: 28px;
+  width: auto;
+  max-width: 110px;
+  object-fit: contain;
+  display: block;
+  /* white logos on terracotta */
+  filter: brightness(0) invert(1) opacity(0.85);
+  transition: opacity 0.25s;
+}
+
+.brand-item:hover img { opacity: 1; }
+
+.brand-text {
+  display: none;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--void);
-  padding: 0 36px;
+  color: rgba(10,10,10,0.6);
 }
 
 .brand-star {
   font-style: normal;
-  font-size: 10px;
-  color: rgba(10,10,10,0.4);
+  font-size: 9px;
+  color: rgba(10,10,10,0.3);
   flex-shrink: 0;
 }
 
