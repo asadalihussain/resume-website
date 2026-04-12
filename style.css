@@ -89,7 +89,7 @@ body {
 
 .section-headline-light { color: var(--surface); }
 .headline-gold { color: var(--terracotta); font-style: normal; }
-.headline-dark { color: var(--charcoal); }
+.section-headline .headline-dark { color: var(--charcoal); }
 .section-headline-center { text-align: center; }
 
 .section-eyebrow {
