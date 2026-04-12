@@ -157,7 +157,7 @@ body {
 
 /* ─── Hero ─────────────────────────────────────────────────── */
 .hero {
-  min-height: 100vh;
+  min-height: 60vh;
   background: var(--void);
   color: var(--surface);
   display: flex;
