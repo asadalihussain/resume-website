@@ -786,10 +786,10 @@ body {
   display: inline-block;
   padding: 6px 14px;
   border-radius: 50px;
-  border: 1px solid rgba(26,26,26,0.12);
+  border: 1px solid var(--terracotta);
   font-size: 12px;
   font-weight: 500;
-  color: rgba(26,26,26,0.55);
+  color: var(--terracotta);
   letter-spacing: 0.03em;
 }
 
