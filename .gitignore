@@ -1,0 +1,5 @@
+.aidesigner/*
+!.aidesigner/.gitkeep
+.agents/
+.claude/
+.mcp.json
