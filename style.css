@@ -1170,6 +1170,8 @@ body {
 
   .hero { padding: 72px 24px 64px; }
   .hero-bottom { flex-direction: column; gap: 32px; }
+  .hero-right { flex-direction: column; width: 100%; }
+  .hero-stat-card { width: 100%; }
 
   .expertise-grid { grid-template-columns: 1fr; }
   .expertise-card { padding: 36px; }
