@@ -1,3 +1,13 @@
+// Swipe helper
+function addSwipe(el, onLeft, onRight) {
+  let startX = 0;
+  el.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+  el.addEventListener('touchend', e => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) diff > 0 ? onLeft() : onRight();
+  }, { passive: true });
+}
+
 // Recommendations slider
 (function () {
   const track = document.querySelector('.rec-track');
@@ -27,6 +37,7 @@
 
   prev.addEventListener('click', () => goTo(current - 1));
   next.addEventListener('click', () => goTo(current + 1));
+  addSwipe(track, () => goTo(current + 1), () => goTo(current - 1));
 })();
 
 // Case studies slider
@@ -57,6 +68,7 @@
 
   prev.addEventListener('click', () => goTo(current - 1));
   next.addEventListener('click', () => goTo(current + 1));
+  addSwipe(track, () => goTo(current + 1), () => goTo(current - 1));
 })();
 
 // Fade-up on scroll
