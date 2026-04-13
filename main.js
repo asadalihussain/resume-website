@@ -10,6 +10,7 @@ function addSwipe(el, onLeft, onRight) {
 
 // Recommendations slider
 (function () {
+  const wrapper = document.querySelector('.rec-track-wrapper');
   const track = document.querySelector('.rec-track');
   const dotsContainer = document.querySelector('.rec-dots');
   const cards = document.querySelectorAll('.rec-card');
@@ -37,11 +38,12 @@ function addSwipe(el, onLeft, onRight) {
 
   prev.addEventListener('click', () => goTo(current - 1));
   next.addEventListener('click', () => goTo(current + 1));
-  addSwipe(track, () => goTo(current + 1), () => goTo(current - 1));
+  addSwipe(wrapper, () => goTo(current + 1), () => goTo(current - 1));
 })();
 
 // Case studies slider
 (function () {
+  const wrapper = document.querySelector('.case-track-wrapper');
   const track = document.querySelector('.case-track');
   const dotsContainer = document.querySelector('.case-dots');
   const cards = document.querySelectorAll('.case-card');
@@ -68,7 +70,7 @@ function addSwipe(el, onLeft, onRight) {
 
   prev.addEventListener('click', () => goTo(current - 1));
   next.addEventListener('click', () => goTo(current + 1));
-  addSwipe(track, () => goTo(current + 1), () => goTo(current - 1));
+  addSwipe(wrapper, () => goTo(current + 1), () => goTo(current - 1));
 })();
 
 // Fade-up on scroll
