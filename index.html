@@ -400,50 +400,57 @@
                 <p class="case-desc">For a high-ticket, complex e-commerce brand, a standard cart abandonment email wasn't enough. Built a multi-channel recovery program pairing personalized email and SMS sequences with expert phone agents — creating a consultative buying experience that converted hesitant shoppers into high-value customers.</p>
               </div>
               <div class="case-right">
-                <svg viewBox="0 0 340 380" xmlns="http://www.w3.org/2000/svg" class="case-diagram">
+                <svg viewBox="0 0 340 370" xmlns="http://www.w3.org/2000/svg" class="case-diagram">
 
-                  <!-- Step 1: Checkout Abandoned -->
-                  <circle cx="28" cy="34" r="16" fill="rgba(26,26,26,0.06)" stroke="rgba(26,26,26,0.18)" stroke-width="1"/>
-                  <text x="28" y="39" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="rgba(26,26,26,0.45)" text-anchor="middle">01</text>
-                  <rect x="58" y="14" width="270" height="40" rx="7" fill="rgba(26,26,26,0.04)" stroke="rgba(26,26,26,0.12)" stroke-width="1"/>
-                  <text x="193" y="30" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="rgba(26,26,26,0.55)" text-anchor="middle" letter-spacing="0.1em">CHECKOUT ABANDONED</text>
-                  <text x="193" y="46" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(26,26,26,0.38)" text-anchor="middle">High-ticket item left in cart</text>
+                  <!-- Trigger: Cart Abandoned -->
+                  <rect x="80" y="8" width="180" height="44" rx="7" fill="rgba(26,26,26,0.05)" stroke="rgba(26,26,26,0.15)" stroke-width="1"/>
+                  <text x="170" y="26" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="rgba(26,26,26,0.55)" text-anchor="middle" letter-spacing="0.1em">CART ABANDONED</text>
+                  <text x="170" y="43" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(26,26,26,0.35)" text-anchor="middle">High-ticket item left in cart</text>
 
-                  <line x1="28" y1="50" x2="28" y2="74" stroke="rgba(26,26,26,0.15)" stroke-width="1.5" stroke-dasharray="3,3"/>
+                  <!-- Fork lines -->
+                  <line x1="170" y1="52" x2="170" y2="68" stroke="rgba(26,26,26,0.18)" stroke-width="1.5"/>
+                  <line x1="170" y1="68" x2="80" y2="96" stroke="rgba(26,26,26,0.15)" stroke-width="1.5"/>
+                  <line x1="170" y1="68" x2="260" y2="96" stroke="rgba(26,26,26,0.15)" stroke-width="1.5"/>
 
-                  <!-- Step 2: Email + SMS -->
-                  <circle cx="28" cy="90" r="16" fill="rgba(26,26,26,0.06)" stroke="rgba(26,26,26,0.18)" stroke-width="1"/>
-                  <text x="28" y="95" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="rgba(26,26,26,0.45)" text-anchor="middle">02</text>
-                  <rect x="58" y="70" width="270" height="40" rx="7" fill="rgba(26,26,26,0.04)" stroke="rgba(26,26,26,0.12)" stroke-width="1"/>
-                  <text x="193" y="86" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="rgba(26,26,26,0.55)" text-anchor="middle" letter-spacing="0.1em">2-WAY EMAIL &amp; SMS</text>
-                  <text x="193" y="102" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(26,26,26,0.38)" text-anchor="middle">Personalized sequences surface buying intent</text>
+                  <!-- Channel: Email -->
+                  <rect x="8" y="96" width="144" height="44" rx="7" fill="rgba(26,26,26,0.04)" stroke="rgba(26,26,26,0.12)" stroke-width="1"/>
+                  <text x="80" y="114" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="rgba(26,26,26,0.5)" text-anchor="middle" letter-spacing="0.1em">EMAIL</text>
+                  <text x="80" y="130" font-family="Inter,sans-serif" font-size="8" fill="rgba(26,26,26,0.35)" text-anchor="middle">Personalized sequences</text>
 
-                  <line x1="28" y1="106" x2="28" y2="130" stroke="rgba(26,26,26,0.15)" stroke-width="1.5" stroke-dasharray="3,3"/>
+                  <!-- Channel: SMS -->
+                  <rect x="188" y="96" width="144" height="44" rx="7" fill="rgba(26,26,26,0.04)" stroke="rgba(26,26,26,0.12)" stroke-width="1"/>
+                  <text x="260" y="114" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="rgba(26,26,26,0.5)" text-anchor="middle" letter-spacing="0.1em">SMS</text>
+                  <text x="260" y="130" font-family="Inter,sans-serif" font-size="8" fill="rgba(26,26,26,0.35)" text-anchor="middle">2-way intent signals</text>
 
-                  <!-- Step 3: Expert Agent Routing -->
-                  <circle cx="28" cy="146" r="16" fill="rgba(26,26,26,0.06)" stroke="rgba(26,26,26,0.18)" stroke-width="1"/>
-                  <text x="28" y="151" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="rgba(26,26,26,0.45)" text-anchor="middle">03</text>
-                  <rect x="58" y="126" width="270" height="40" rx="7" fill="rgba(26,26,26,0.04)" stroke="rgba(26,26,26,0.12)" stroke-width="1"/>
-                  <text x="193" y="142" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="rgba(26,26,26,0.55)" text-anchor="middle" letter-spacing="0.1em">EXPERT PHONE AGENT</text>
-                  <text x="193" y="158" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(26,26,26,0.38)" text-anchor="middle">Warm handoff to specialist for consultative close</text>
+                  <!-- Merge lines -->
+                  <line x1="80" y1="140" x2="80" y2="158" stroke="rgba(26,26,26,0.15)" stroke-width="1.5"/>
+                  <line x1="260" y1="140" x2="260" y2="158" stroke="rgba(26,26,26,0.15)" stroke-width="1.5"/>
+                  <line x1="80" y1="158" x2="260" y2="158" stroke="rgba(26,26,26,0.15)" stroke-width="1.5"/>
+                  <line x1="170" y1="158" x2="170" y2="174" stroke="rgba(26,26,26,0.18)" stroke-width="1.5"/>
+                  <polygon points="170,178 165,170 175,170" fill="rgba(26,26,26,0.2)"/>
 
-                  <line x1="28" y1="162" x2="28" y2="186" stroke="#B8963E" stroke-width="1.5" stroke-dasharray="3,3"/>
-                  <polygon points="28,192 23,184 33,184" fill="#B8963E"/>
+                  <!-- Expert Agent (gold) -->
+                  <rect x="40" y="180" width="260" height="44" rx="7" fill="rgba(184,150,62,0.08)" stroke="#B8963E" stroke-width="1.5"/>
+                  <text x="170" y="198" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#B8963E" text-anchor="middle" letter-spacing="0.1em">EXPERT PHONE AGENT</text>
+                  <text x="170" y="214" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(184,150,62,0.7)" text-anchor="middle">Warm handoff · consultative close</text>
 
-                  <!-- Step 4: Sale Closed -->
-                  <circle cx="28" cy="208" r="16" fill="rgba(184,150,62,0.12)" stroke="#B8963E" stroke-width="1.5"/>
-                  <text x="28" y="213" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#B8963E" text-anchor="middle">04</text>
-                  <rect x="58" y="188" width="270" height="40" rx="7" fill="rgba(184,150,62,0.06)" stroke="#B8963E" stroke-width="1"/>
-                  <text x="193" y="204" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#B8963E" text-anchor="middle" letter-spacing="0.1em">CONSULTATIVE CLOSE</text>
-                  <text x="193" y="220" font-family="Inter,sans-serif" font-size="8.5" fill="rgba(184,150,62,0.7)" text-anchor="middle">+30% CVR improvement vs. self-serve</text>
+                  <!-- Arrow to stat -->
+                  <line x1="170" y1="224" x2="170" y2="244" stroke="#B8963E" stroke-width="1.5"/>
+                  <polygon points="170,248 165,240 175,240" fill="#B8963E"/>
 
-                  <line x1="28" y1="224" x2="28" y2="248" stroke="#B8963E" stroke-width="1.5" stroke-dasharray="3,3"/>
-                  <polygon points="28,254 23,246 33,246" fill="#B8963E"/>
+                  <!-- CVR stat badge -->
+                  <rect x="95" y="250" width="150" height="34" rx="17" fill="rgba(184,150,62,0.1)" stroke="#B8963E" stroke-width="1"/>
+                  <text x="170" y="262" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#B8963E" text-anchor="middle" letter-spacing="0.08em">CONVERSION RATE</text>
+                  <text x="170" y="276" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#B8963E" text-anchor="middle">+30% vs. self-serve</text>
+
+                  <!-- Arrow to result -->
+                  <line x1="170" y1="284" x2="170" y2="300" stroke="#B8963E" stroke-width="1.5" stroke-dasharray="3,3"/>
+                  <polygon points="170,304 165,296 175,296" fill="#B8963E"/>
 
                   <!-- Result -->
-                  <rect x="8" y="258" width="320" height="70" rx="10" fill="rgba(184,150,62,0.1)" stroke="#B8963E" stroke-width="1.5"/>
-                  <text x="170" y="280" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#B8963E" text-anchor="middle" letter-spacing="0.14em">ANNUAL IMPACT</text>
-                  <text x="170" y="318" font-family="Inter,sans-serif" font-size="32" font-weight="800" fill="#B8963E" text-anchor="middle">$8M</text>
+                  <rect x="20" y="306" width="300" height="56" rx="10" fill="rgba(184,150,62,0.1)" stroke="#B8963E" stroke-width="1.5"/>
+                  <text x="170" y="325" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#B8963E" text-anchor="middle" letter-spacing="0.14em">ANNUAL IMPACT</text>
+                  <text x="170" y="352" font-family="Inter,sans-serif" font-size="28" font-weight="800" fill="#B8963E" text-anchor="middle">$8M</text>
 
                 </svg>
               </div>
