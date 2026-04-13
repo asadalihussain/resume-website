@@ -1051,16 +1051,16 @@ body {
   transform: translateX(-50%);
   width: 700px;
   height: 400px;
-  background: rgba(184, 150, 62, 0.18);
+  background: rgba(184, 150, 62, 0.22);
   filter: blur(100px);
   border-radius: 50%;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 
 .contact-inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1099,9 +1099,9 @@ body {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: var(--charcoal);
+  color: var(--surface);
   text-decoration: none;
-  border: 1.5px solid rgba(26,26,26,0.2);
+  border: 1.5px solid rgba(255,255,255,0.25);
   border-radius: 50px;
   overflow: hidden;
   transition: border-color 0.4s;
