@@ -51,18 +51,19 @@ document.querySelectorAll('.hero-stat-value').forEach(el => statObserver.observe
 const navLinks = document.querySelectorAll('.nav-inner a[href^="#"]');
 const navSections = document.querySelectorAll('section[id]');
 
-const navObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const id = entry.target.id;
-      navLinks.forEach(link => {
-        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
-      });
-    }
+function updateActiveNav() {
+  const scrollY = window.scrollY + window.innerHeight * 0.25;
+  let current = '';
+  navSections.forEach(section => {
+    if (section.offsetTop <= scrollY) current = section.id;
   });
-}, { threshold: 0.25, rootMargin: '-10% 0px -60% 0px' });
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+  });
+}
 
-navSections.forEach(s => navObserver.observe(s));
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+updateActiveNav();
 
 // ─── Swipe Helper ────────────────────────────────────────────────
 function addSwipe(el, onLeft, onRight) {
