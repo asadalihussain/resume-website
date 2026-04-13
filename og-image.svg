@@ -1,0 +1,42 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&amp;display=swap');
+    </style>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  <rect width="1200" height="630" fill="transparent" filter="url(#grain)" opacity="0.05"/>
+
+  <!-- Eyebrow -->
+  <line x1="72" y1="272" x2="112" y2="272" stroke="#B8963E" stroke-width="1.5"/>
+  <text x="128" y="277" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#B8963E" letter-spacing="2.5">LIFECYCLE &amp; RETENTION MARKETER</text>
+
+  <!-- Name -->
+  <text x="68" y="398" font-family="Inter, sans-serif" font-size="120" font-weight="800" fill="#F5F0E8" letter-spacing="-5">Asad</text>
+  <text x="68" y="502" font-family="Inter, sans-serif" font-size="110" font-weight="300" fill="#F5F0E8" letter-spacing="-4">Hussain<tspan fill="#B8963E">.</tspan></text>
+
+  <!-- Divider -->
+  <line x1="68" y1="538" x2="1132" y2="538" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <!-- Description -->
+  <text x="68" y="566" font-family="Inter, sans-serif" font-size="15" font-weight="300" fill="rgba(245,240,232,0.55)">Building high-LTV, data-informed, customer-first lifecycle marketing programs</text>
+  <text x="68" y="588" font-family="Inter, sans-serif" font-size="15" font-weight="300" fill="rgba(245,240,232,0.55)">— from acquisition to long-term brand loyalty.</text>
+
+  <!-- Stat card 1: $65M+ -->
+  <rect x="820" y="548" width="148" height="70" rx="12" fill="rgba(245,240,232,0.04)" stroke="rgba(245,240,232,0.1)" stroke-width="1"/>
+  <text x="844" y="576" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#B8963E" letter-spacing="-0.5">$65M+</text>
+  <text x="844" y="594" font-family="Inter, sans-serif" font-size="10" font-weight="400" fill="rgba(245,240,232,0.4)">in attributable revenue impact</text>
+
+  <!-- Stat card 2: 17 YRS -->
+  <rect x="984" y="548" width="148" height="70" rx="12" fill="rgba(245,240,232,0.04)" stroke="rgba(245,240,232,0.1)" stroke-width="1"/>
+  <text x="1008" y="576" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#B8963E" letter-spacing="-0.5">17 YRS</text>
+  <text x="1008" y="594" font-family="Inter, sans-serif" font-size="10" font-weight="400" fill="rgba(245,240,232,0.4)">of craft excellence</text>
+
+</svg>
