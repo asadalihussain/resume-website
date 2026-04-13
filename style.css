@@ -1092,38 +1092,25 @@ body {
 }
 
 .contact-btn {
-  position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 20px 44px;
+  gap: 10px;
+  padding: 18px 44px;
   font-size: 15px;
   font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--surface);
+  letter-spacing: 0.02em;
+  color: var(--void);
   text-decoration: none;
-  border: 1.5px solid rgba(255,255,255,0.25);
+  background: var(--surface);
   border-radius: 50px;
-  overflow: hidden;
-  transition: border-color 0.4s;
+  transition: background 0.25s, color 0.25s;
 }
 
-.contact-btn:hover { border-color: var(--terracotta); }
+.contact-btn:hover { background: var(--terracotta); color: var(--surface); }
 
-.contact-btn-fill {
-  position: absolute;
-  inset: 0;
-  background: var(--terracotta);
-  border-radius: 50px;
-  transform: translateY(100%);
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.contact-btn:hover .contact-btn-fill { transform: translateY(0); }
+.contact-btn-fill { display: none; }
 
 .contact-btn-text {
-  position: relative;
-  z-index: 1;
   display: flex;
   align-items: center;
   gap: 10px;
