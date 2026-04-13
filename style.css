@@ -1080,7 +1080,7 @@ body {
   font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.04em;
-  color: var(--charcoal);
+  color: var(--surface);
   margin-bottom: 64px;
 }
 
@@ -1134,22 +1134,12 @@ body {
 .footer-bottom {
   margin-top: 120px;
   width: 100%;
-  border-top: 1px solid rgba(26,26,26,0.08);
+  border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 28px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   font-size: 13px;
-  color: var(--stone);
+  color: rgba(255,255,255,0.35);
 }
-
-.footer-bottom a {
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.footer-bottom a:hover { color: var(--surface); }
 
 /* ─── Scroll Fade-In ────────────────────────────────────────── */
 .fade-up {
@@ -1190,7 +1180,7 @@ body {
   .edu-card { flex-direction: column; align-items: flex-start; }
 
   .contact-headline { font-size: clamp(2.5rem, 10vw, 4rem); }
-  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .footer-bottom { text-align: center; }
 }
 
 @media (max-width: 480px) {
