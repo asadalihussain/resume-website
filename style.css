@@ -354,10 +354,15 @@ body {
 .brand-item img[alt="AutoAnything"],
 .brand-item img[alt="Blink Health"],
 .brand-item img[alt="Hella Rooted"],
-.brand-item img[alt="TRS Health"],
-.brand-item img[alt="Securing Relief"] {
+.brand-item img[alt="TRS Health"] {
   height: 48px;
   max-width: 180px;
+}
+
+.brand-item img[alt="Shopify"],
+.brand-item img[alt="Securing Relief"] {
+  height: 36px;
+  max-width: 160px;
 }
 
 .brand-text {
