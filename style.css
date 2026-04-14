@@ -350,13 +350,15 @@ body {
 .brand-item:hover img { opacity: 1; }
 
 .brand-item img[alt="Hella Rooted"],
-.brand-item img[alt="TRS Health"],
-.brand-item img[alt="Coupons.com"] {
+.brand-item img[alt="TRS Health"] {
   height: 42px;
   max-width: 140px;
 }
 
-.brand-item img[alt="Khan Academy"] {
+.brand-item img[alt="Khan Academy"],
+.brand-item img[alt="Coupons.com"],
+.brand-item img[alt="AutoAnything"],
+.brand-item img[alt="Blink Health"] {
   height: 48px;
   max-width: 180px;
 }
