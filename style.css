@@ -356,6 +356,11 @@ body {
   max-width: 140px;
 }
 
+.brand-item img[alt="Khan Academy"] {
+  height: 48px;
+  max-width: 180px;
+}
+
 .brand-text {
   display: none;
   font-size: 13px;
