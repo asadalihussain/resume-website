@@ -1199,7 +1199,7 @@ body {
 
 @media (max-width: 480px) {
   .hero-cta { flex-direction: column; align-items: flex-start; }
-  .timeline-top { flex-direction: column; gap: 8px; }
+  .timeline-top { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 
 /* ─── Scroll Progress Bar ───────────────────────────────────── */
