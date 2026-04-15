@@ -571,6 +571,8 @@ body {
 }
 
 /* ─── Experience Timeline ───────────────────────────────────── */
+.timeline-headline { margin-bottom: 80px; }
+
 .timeline {
   position: relative;
   padding-left: 56px;
