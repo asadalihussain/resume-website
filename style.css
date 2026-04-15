@@ -586,8 +586,9 @@ body {
 
 .timeline-year {
   position: absolute;
-  left: -104px;
+  left: -56px;
   top: 6px;
+  transform: translateX(-50%);
   font-size: 11px;
   font-weight: 700;
   font-family: monospace;
@@ -1198,7 +1199,7 @@ body {
   .card-icon-wrap { top: 32px; right: 32px; }
 
   .timeline { padding-left: 32px; }
-  .timeline-year { left: -72px; font-size: 10px; padding: 3px 8px; }
+  .timeline-year { left: -32px; font-size: 10px; padding: 3px 8px; }
 
   .edu-card { flex-direction: column; align-items: flex-start; }
 
