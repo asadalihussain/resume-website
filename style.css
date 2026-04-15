@@ -584,21 +584,34 @@ body {
 
 .timeline-item:last-child { padding-bottom: 0; }
 
-.timeline-dot {
+.timeline-year {
   position: absolute;
-  left: -64px;
-  top: 8px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
+  left: -88px;
+  top: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: monospace;
+  letter-spacing: 0.5px;
+  padding: 4px 8px;
+  border-radius: 4px;
   background: var(--surface);
-  box-shadow: 0 0 0 6px var(--charcoal);
-  transition: transform 0.3s, background 0.3s;
+  color: var(--muted);
+  border: 1px solid rgba(255,255,255,0.08);
+  white-space: nowrap;
+  transition: background 0.3s, color 0.3s;
 }
 
-.timeline-dot-accent { background: var(--gold); }
+.timeline-year-accent {
+  background: var(--gold);
+  color: var(--charcoal);
+  border-color: var(--gold);
+}
 
-.timeline-item:hover .timeline-dot { transform: scale(1.5); background: var(--gold); }
+.timeline-item:hover .timeline-year {
+  background: var(--gold);
+  color: var(--charcoal);
+  border-color: var(--gold);
+}
 
 .timeline-top {
   display: flex;
@@ -1187,7 +1200,7 @@ body {
   .card-icon-wrap { top: 32px; right: 32px; }
 
   .timeline { padding-left: 32px; }
-  .timeline-dot { left: -40px; }
+  .timeline-year { left: -56px; font-size: 10px; padding: 3px 6px; }
 
   .edu-card { flex-direction: column; align-items: flex-start; }
 
