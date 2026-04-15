@@ -586,30 +586,28 @@ body {
 
 .timeline-year {
   position: absolute;
-  left: -88px;
+  left: -104px;
   top: 6px;
   font-size: 11px;
   font-weight: 700;
   font-family: monospace;
   letter-spacing: 0.5px;
-  padding: 4px 8px;
-  border-radius: 4px;
-  background: var(--surface);
-  color: var(--muted);
-  border: 1px solid rgba(255,255,255,0.08);
+  padding: 4px 10px;
+  border-radius: 50px;
+  background: transparent;
+  color: rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.2);
   white-space: nowrap;
-  transition: background 0.3s, color 0.3s;
+  transition: border-color 0.3s, color 0.3s;
 }
 
 .timeline-year-accent {
-  background: var(--gold);
-  color: var(--charcoal);
+  color: var(--gold);
   border-color: var(--gold);
 }
 
 .timeline-item:hover .timeline-year {
-  background: var(--gold);
-  color: var(--charcoal);
+  color: var(--gold);
   border-color: var(--gold);
 }
 
@@ -1200,7 +1198,7 @@ body {
   .card-icon-wrap { top: 32px; right: 32px; }
 
   .timeline { padding-left: 32px; }
-  .timeline-year { left: -56px; font-size: 10px; padding: 3px 6px; }
+  .timeline-year { left: -72px; font-size: 10px; padding: 3px 8px; }
 
   .edu-card { flex-direction: column; align-items: flex-start; }
 
